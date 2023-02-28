@@ -25,7 +25,7 @@ type Comment struct {
 }
 
 type RecentAction struct {
-	TimeSeconds int      `json:"timeSeconds"`
-	BlogEntry   struct{} `json:"blogEntry"`
-	Comment     struct{} `json:"comment"`
+	TimeSeconds int64      `json:"timeSeconds"`
+	BlogEntry   *BlogEntry `json:"blogEntry"`
+	Comment     *Comment   `json:"comment"`
 }
