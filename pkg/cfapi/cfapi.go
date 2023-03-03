@@ -18,7 +18,8 @@ type CodeforcesClient struct {
 }
 
 func (cfClient *CodeforcesClient) RecentActions(maxCount int) ([]models.RecentAction, error) {
-	resp, err := cfClient.client.Get("https://codeforces.com/api/recentActions?maxCount=30")
+
+	resp, err := cfClient.client.Get("https://codeforces.com/api/recentActions?maxCount=100")
 	if err != nil {
 		zap.S().Errorf("Error occured while calling cf api: %v", err)
 		return nil, err
