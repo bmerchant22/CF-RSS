@@ -87,3 +87,27 @@ func (m *MongoStore) GetMaxTimeStamp() (int64, error) {
 	}
 	return wrapper.MaxTimeStamp, err
 }
+
+func (m *MongoStore) QueryRecentActions(after int64) ([]models.RecentAction, error) {
+	filter := bson.M{"timeseconds": bson.M{"$gte": after}}
+	cursor, err := m.RecentActionCollection.Find(context.TODO(), filter)
+	if err != nil {
+		zap.S().Errorf("Error while quering mongoDB")
+	}
+
+	zap.S().Infof("Quering mongodb after %d timeStamp", after)
+	zap.S().Infof("Using filter to query : %+v", filter)
+
+	var results []models.RecentAction
+	err = cursor.All(context.TODO(), &results)
+	if err != nil {
+		zap.S().Errorf("Error while unmarshalling")
+	}
+
+	for cursor.Next(context.TODO()) {
+		if err = cursor.Decode(&results); err != nil {
+			panic(err)
+		}
+	}
+	return results, err
+}
