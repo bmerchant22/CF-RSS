@@ -28,7 +28,7 @@ func (cfClient *CodeforcesClient) RecentActions(maxCount int) ([]models.RecentAc
 
 	data, err := io.ReadAll(resp.Body)
 	if err != nil {
-		fmt.Println("error occured while reading the resp body")
+		fmt.Println("error occurred while reading the resp body")
 		return nil, err
 	}
 
@@ -39,7 +39,9 @@ func (cfClient *CodeforcesClient) RecentActions(maxCount int) ([]models.RecentAc
 		Result []models.RecentAction
 	}{}
 
-	json.Unmarshal(data, &wrapper)
+	if err = json.Unmarshal(data, &wrapper); err != nil {
+		zap.S().Errorf("Error while unmarshalling data from cfapi : %v", err)
+	}
 
 	return wrapper.Result, err
 }
