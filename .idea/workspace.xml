@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="beb44f22-4e9d-40ac-9f39-ad435f40fe52" name="Changes" comment="Enabled background worker and created web server in 2 different goroutines concurrently">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" url="file://$PROJECT_DIR$/../../../../../../Program Files/Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="324779dd-54db-40bf-9ac7-e136b3e640d5" />
+        <option name="url" value="https://github.com/bmerchant22/CF-RSS.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupGrunt">
+      <scroll-view-position x="0" y="0" />
+    </layout>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2MAhd4BR0uEBLkBzI2dSeZmTXAo" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultGoTemplateProperty": "Go File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "full.screen.before.presentation.mode": "true",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "C:/Users/merch/OneDrive/Desktop/cfrss-reference",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.general"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\merch\OneDrive\Desktop\Coding_Playground\project" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="go build github.com/bmerchant22/project/cmd/web" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="project" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/bmerchant22/project/cmd/web" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/cmd/web/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build github.com/bmerchant22/project/cmd/web" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="added 1st file to git" />
+    <MESSAGE value="added 2nd file to git" />
+    <MESSAGE value="added 3rd file to git" />
+    <MESSAGE value="RecentActions struct type made, all models built." />
+    <MESSAGE value="RecentActions func made in CodeforcesAPI interface." />
+    <MESSAGE value="package changed from web to main." />
+    <MESSAGE value="created RecentActions method, got data from cfapi, unmarshalled it, returned the result." />
+    <MESSAGE value="marshalled recentActions and print the imported data in my models" />
+    <MESSAGE value="Took pointers rather than value" />
+    <MESSAGE value="tag variable was an array of strings, but took only string.So, corrected it." />
+    <MESSAGE value="Integrated mongodb to my code. Applied and checked a filter through code, via findone method and decoding the resp." />
+    <MESSAGE value="Just added a space line" />
+    <MESSAGE value="method 1 : To connect to database.&#10;method 2 : To store recentActions in mongodb.&#10;method 3 : To get MaxTimeStamp by aggregate query and decode the cursor into wrapper." />
+    <MESSAGE value="created a mongoStore variable to access collections and called all 3 methods with condition on timeSeconds and made worker work every 5 min." />
+    <MESSAGE value="Removed unnecessary logger code and called worker." />
+    <MESSAGE value="Created a method to query mongoDB to filter recentActions, with time greater than queried by the user." />
+    <MESSAGE value="Used echo package to implement a minimalistic web framework. Converted user entered time string into int. Called Query method from store and returned result on website." />
+    <MESSAGE value="Created user model" />
+    <MESSAGE value="Added const for routes" />
+    <MESSAGE value="Created functions to call at different routes, with filters" />
+    <MESSAGE value="Created handler functions to handle requests at different url" />
+    <MESSAGE value="Created a server and called handler functions to handle queries" />
+    <MESSAGE value="Ignore" />
+    <MESSAGE value="worker doesn't use echo package and shifted to main" />
+    <MESSAGE value="Enabled background worker and created web server in 2 different goroutines concurrently" />
+    <option name="LAST_COMMIT_MESSAGE" value="Enabled background worker and created web server in 2 different goroutines concurrently" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+</project>
